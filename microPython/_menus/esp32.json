@@ -1,0 +1,401 @@
+{
+    "MODE": {
+        "menu": [
+            [
+                "I2C",
+                "i2c"
+            ],
+            [
+                "uart1",
+                "uart1"
+            ],
+            [
+                "uart2",
+                "uart2"
+            ]
+        ]
+    },
+    "SENTRY": {
+        "menu": [
+            [
+                "0x60",
+                "0x60"
+            ],
+            [
+                "0x61",
+                "0x61"
+            ],
+            [
+                "0x62",
+                "0x62"
+            ],
+            [
+                "0x63",
+                "0x63"
+            ]
+        ]
+    },
+    "VISION_TYPE_ALL": {
+        "menu": [
+            [
+                "Color",
+                "sentry2_vision_e.kVisionColor"
+            ],
+            [
+                "Blob",
+                "sentry2_vision_e.kVisionBlob"
+            ],
+            [
+                "AprilTag",
+                "sentry2_vision_e.kVisionAprilTag"
+            ],
+            [
+                "Line",
+                "sentry2_vision_e.kVisionLine"
+            ],
+            [
+                "Learning",
+                "sentry2_vision_e.kVisionLearning"
+            ],
+            [
+                "Card",
+                "sentry2_vision_e.kVisionCard"
+            ],
+            [
+                "Face",
+                "sentry2_vision_e.kVisionFace"
+            ],
+            [
+                "20Classes",
+                "sentry2_vision_e.kVision20Classes"
+            ],
+            [
+                "QrCode",
+                "sentry2_vision_e.kVisionQrCode"
+            ],
+            [
+                "Custom",
+                "sentry2_vision_e.kVisionCustom"
+            ],
+            [
+                "Motion",
+                "sentry2_vision_e.kVisionMotionDetect"
+            ]
+        ]
+    },
+    "VISION_TYPE_VALUE": {
+        "menu": [
+            [
+                "Blob",
+                "sentry2_vision_e.kVisionBlob"
+            ],
+            [
+                "AprilTag",
+                "sentry2_vision_e.kVisionAprilTag"
+            ],
+            [
+                "Learning",
+                "sentry2_vision_e.kVisionLearning"
+            ],
+            [
+                "Card",
+                "sentry2_vision_e.kVisionCard"
+            ],
+            [
+                "Face",
+                "sentry2_vision_e.kVisionFace"
+            ],
+            [
+                "20Classes",
+                "sentry2_vision_e.kVision20Classes"
+            ],
+            [
+                "Motion",
+                "sentry2_vision_e.kVisionMotionDetect"
+            ]
+        ]
+    },
+    "VISION_TYPE_CUSTOM": {
+        "menu": [
+            [
+                "Color",
+                "sentry2_vision_e.kVisionColor"
+            ],
+            [
+                "Blob",
+                "sentry2_vision_e.kVisionBlob"
+            ],
+            [
+                "Learning",
+                "sentry2_vision_e.kVisionLearning"
+            ],
+            [
+                "Face",
+                "sentry2_vision_e.kVisionFace"
+            ],
+            [
+                "Custom",
+                "sentry2_vision_e.kVisionCustom"
+            ]
+        ],
+        "default_SetVisionParam_VISION_TYPE": "sentry2_vision_e.kVisionCustom"
+    },
+    "VISION_STA": {
+        "menu": [
+            [
+                "Open",
+                "ON"
+            ],
+            [
+                "Close",
+                "OFF"
+            ]
+        ]
+    },
+    "FACE_PARAM": {
+        "menu": [
+            [
+                "save data as",
+                "100"
+            ],
+            [
+                "delete data",
+                "0"
+            ]
+        ]
+    },
+    "OBJ_INFO": {
+        "menu": [
+            [
+                "x-coord",
+                "sentry_obj_info_e.kXValue"
+            ],
+            [
+                "y-coord",
+                "sentry_obj_info_e.kYValue"
+            ],
+            [
+                "width",
+                "sentry_obj_info_e.kWidthValue"
+            ],
+            [
+                "height",
+                "sentry_obj_info_e.kHeightValue"
+            ],
+            [
+                "label",
+                "sentry_obj_info_e.kLabel"
+            ]
+        ]
+    },
+    "OBJ_INFO_CUSTOM": {
+        "menu": [
+            [
+                "Value1",
+                "sentry_obj_info_e.kXValue"
+            ],
+            [
+                "Value2",
+                "sentry_obj_info_e.kYValue"
+            ],
+            [
+                "Value3",
+                "sentry_obj_info_e.kWidthValue"
+            ],
+            [
+                "Value4",
+                "sentry_obj_info_e.kHeightValue"
+            ],
+            [
+                "Value5",
+                "sentry_obj_info_e.kLabel"
+            ]
+        ]
+    },
+    "OBJ_INFO_LINE": {
+        "menu": [
+            [
+                "x-coord of ending point",
+                "sentry_obj_info_e.kXValue"
+            ],
+            [
+                "y-coord of ending point",
+                "sentry_obj_info_e.kYValue"
+            ],
+            [
+                "x-coord of starting point",
+                "sentry_obj_info_e.kWidthValue"
+            ],
+            [
+                "y-coord of starting point",
+                "sentry_obj_info_e.kHeightValue"
+            ],
+            [
+                "inclination angle",
+                "sentry_obj_info_e.kLabel"
+            ]
+        ]
+    },
+    "OBJ_INFO_QR": {
+        "menu": [
+            [
+                "x-coord",
+                "sentry_obj_info_e.kXValue"
+            ],
+            [
+                "y-coord",
+                "sentry_obj_info_e.kYValue"
+            ],
+            [
+                "width",
+                "sentry_obj_info_e.kWidthValue"
+            ],
+            [
+                "height",
+                "sentry_obj_info_e.kHeightValue"
+            ]
+        ]
+    },
+    "OBJ_INFO_COLOR": {
+        "menu": [
+            [
+                "label",
+                "sentry_obj_info_e.kLabel"
+            ],
+            [
+                "red CH value",
+                "sentry_obj_info_e.kRValue"
+            ],
+            [
+                "green CH value",
+                "sentry_obj_info_e.kGValue"
+            ],
+            [
+                "blue CH value",
+                "sentry_obj_info_e.kBValue"
+            ]
+        ]
+    },
+    "AWB": {
+        "menu": [
+            [
+                "Auto",
+                "sentry_camera_white_balance_e.kAutoWhiteBalance"
+            ],
+            [
+                "Lock",
+                "sentry_camera_white_balance_e.kLockWhiteBalance"
+            ],
+            [
+                "WhiteLight",
+                "sentry_camera_white_balance_e.kWhiteLight"
+            ],
+            [
+                "YellowLight",
+                "sentry_camera_white_balance_e.kYellowLight"
+            ]
+        ]
+    },
+    "LED_COLOR": {
+        "menu": [
+            [
+                "Close",
+                "sentry_led_color_e.kLedClose"
+            ],
+            [
+                "Red",
+                "sentry_led_color_e.kLedRed"
+            ],
+            [
+                "Green",
+                "sentry_led_color_e.kLedGreen"
+            ],
+            [
+                "Yellow",
+                "sentry_led_color_e.kLedYellow"
+            ],
+            [
+                "Blue",
+                "sentry_led_color_e.kLedBlue"
+            ],
+            [
+                "Purple",
+                "sentry_led_color_e.kLedPurple"
+            ],
+            [
+                "Cyan",
+                "sentry_led_color_e.kLedCyan"
+            ],
+            [
+                "White",
+                "sentry_led_color_e.kLedWhite"
+            ]
+        ]
+    },
+    "COLOR_LABLE": {
+        "menu": [
+            [
+                "Black",
+                "color_label_e.kColorBlack"
+            ],
+            [
+                "White",
+                "color_label_e.kColorWhite"
+            ],
+            [
+                "Red",
+                "color_label_e.kColorRed"
+            ],
+            [
+                "Green",
+                "color_label_e.kColorGreen"
+            ],
+            [
+                "Blue",
+                "color_label_e.kColorBlue"
+            ],
+            [
+                "Yellow",
+                "color_label_e.kColorYellow"
+            ]
+        ],
+        "default_SetBlobParam_COLOR_LABLE": "sentry2_vision_e.kColorRed",
+        "default_GetColorBlob_COLOR_LABLE": "sentry2_vision_e.kColorRed"
+    },
+    "BALL_LABLE": {
+        "menu": [
+            [
+                "Table Tennis",
+                "class20_label_e.kAirplane"
+            ],
+            [
+                "Tennis",
+                "class20_label_e.kBicycle"
+            ]
+        ]
+    },
+    "CARD_LABLE": {
+        "menu": [
+            [
+                "Forward",
+                "sentry2_card_label_e.kCardForward"
+            ],
+            [
+                "Left",
+                "sentry2_card_label_e.kCardLeft"
+            ],
+            [
+                "Right",
+                "sentry2_card_label_e.kCardRight"
+            ],
+            [
+                "Turn Around",
+                "sentry2_card_label_e.kCardTurnAround"
+            ],
+            [
+                "Park",
+                "sentry2_card_label_e.kCardPark"
+            ]
+        ]
+    }
+}

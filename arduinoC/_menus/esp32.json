@@ -1,0 +1,373 @@
+{
+    "MODE": {
+        "menu": [
+            [
+                "I2C",
+                "Wire"
+            ],
+            [
+                "Serial1",
+                "Serial1"
+            ],
+            [
+                "Serial2",
+                "Serial2"
+            ]
+        ]
+    },
+    "SENTRY": {
+        "menu": [
+            [
+                "0x60",
+                "0x60"
+            ]
+        ]
+    },
+    "VISION_TYPE_ALL": {
+        "menu": [
+            [
+                "Color",
+                " Sengo1::kVisionColor"
+            ],
+            [
+                "Blob",
+                " Sengo1::kVisionBlob"
+            ],
+            [
+                "Ball",
+                " Sengo1::kVisionBall"
+            ],
+            [
+                "Line",
+                " Sengo1::kVisionLine"
+            ],
+            [
+                "Card",
+                " Sengo1::kVisionCard"
+            ],
+            [
+                "Body",
+                " Sengo1::kVisionBody"
+            ],
+            [
+                "Face",
+                " Sengo1::kVisionFace"
+            ],
+            [
+                "QrCode",
+                " Sengo1::kVisionQrCode"
+            ]
+        ]
+    },
+    "VISION_TYPE_VALUE": {
+        "menu": [
+            [
+                "Blob",
+                " Sengo1::kVisionBlob"
+            ],
+            [
+                "Ball",
+                " Sengo1::kVisionBall"
+            ],
+            [
+                "Card",
+                " Sengo1::kVisionCard"
+            ],
+            [
+                "Body",
+                " Sengo1::kVisionBody"
+            ],
+            [
+                "Face",
+                " Sengo1::kVisionFace"
+            ]
+        ]
+    },
+    "VISION_TYPE_CUSTOM": {
+        "menu": [
+            [
+                "Color",
+                " Sengo1::kVisionColor"
+            ],
+            [
+                "Blob",
+                " Sengo1::kVisionBlob"
+            ],
+            [
+                "Learning",
+                " Sengo1::kVisionLearning"
+            ],
+            [
+                "Face",
+                " Sengo1::kVisionFace"
+            ],
+            [
+                "Custom",
+                " Sengo1::kVisionCustom"
+            ]
+        ],
+        "default_SetVisionParam_VISION_TYPE": " Sengo1::kVisionCustom"
+    },
+    "VISION_STA": {
+        "menu": [
+            [
+                "Open",
+                "ON"
+            ],
+            [
+                "Close",
+                "OFF"
+            ]
+        ]
+    },
+    "FACE_PARAM": {
+        "menu": [
+            [
+                "save data as",
+                "100"
+            ],
+            [
+                "delete data",
+                "0"
+            ]
+        ]
+    },
+    "OBJ_INFO": {
+        "menu": [
+            [
+                "x-coord",
+                "kXValue"
+            ],
+            [
+                "y-coord",
+                "kYValue"
+            ],
+            [
+                "width",
+                "kWidthValue"
+            ],
+            [
+                "height",
+                "kHeightValue"
+            ],
+            [
+                "label",
+                "kLabel"
+            ]
+        ]
+    },
+    "OBJ_INFO_CUSTOM": {
+        "menu": [
+            [
+                "Value1",
+                "kXValue"
+            ],
+            [
+                "Value2",
+                "kYValue"
+            ],
+            [
+                "Value3",
+                "kWidthValue"
+            ],
+            [
+                "Value4",
+                "kHeightValue"
+            ],
+            [
+                "Value5",
+                "kLabel"
+            ]
+        ]
+    },
+    "OBJ_INFO_LINE": {
+        "menu": [
+            [
+                "x-coord of ending point",
+                "kXValue"
+            ],
+            [
+                "y-coord of ending point",
+                "kYValue"
+            ],
+            [
+                "x-coord of starting point",
+                "kWidthValue"
+            ],
+            [
+                "y-coord of starting point",
+                "kHeightValue"
+            ],
+            [
+                "inclination angle",
+                "kLabel"
+            ]
+        ]
+    },
+    "OBJ_INFO_QR": {
+        "menu": [
+            [
+                "x-coord",
+                "kXValue"
+            ],
+            [
+                "y-coord",
+                "kYValue"
+            ],
+            [
+                "width",
+                "kWidthValue"
+            ],
+            [
+                "height",
+                "kHeightValue"
+            ]
+        ]
+    },
+    "OBJ_INFO_COLOR": {
+        "menu": [
+            [
+                "label",
+                "kLabel"
+            ],
+            [
+                "red CH value",
+                "kRValue"
+            ],
+            [
+                "green CH value",
+                "kGValue"
+            ],
+            [
+                "blue CH value",
+                "kBValue"
+            ]
+        ]
+    },
+    "AWB": {
+        "menu": [
+            [
+                "Auto",
+                "kAutoWhiteBalance"
+            ],
+            [
+                "Lock",
+                "kLockWhiteBalance"
+            ],
+            [
+                "WhiteLight",
+                "kWhiteLight"
+            ],
+            [
+                "YellowLight",
+                "kYellowLight"
+            ],
+            [
+                "WhiteBalanceCalibrating",
+                "kWhiteBalanceCalibrating"
+            ]
+        ]
+    },
+    "LED_COLOR": {
+        "menu": [
+            [
+                "Close",
+                "kLedClose"
+            ],
+            [
+                "Red",
+                "kLedRed"
+            ],
+            [
+                "Green",
+                "kLedGreen"
+            ],
+            [
+                "Yellow",
+                "kLedYellow"
+            ],
+            [
+                "Blue",
+                "kLedBlue"
+            ],
+            [
+                "Purple",
+                "kLedPurple"
+            ],
+            [
+                "Cyan",
+                "kLedCyan"
+            ],
+            [
+                "White",
+                "kLedWhite"
+            ]
+        ]
+    },
+    "COLOR_LABLE": {
+        "menu": [
+            [
+                "Black",
+                " Sengo1::kColorBlack"
+            ],
+            [
+                "White",
+                " Sengo1::kColorWhite"
+            ],
+            [
+                "Red",
+                " Sengo1::kColorRed"
+            ],
+            [
+                "Green",
+                " Sengo1::kColorGreen"
+            ],
+            [
+                "Blue",
+                " Sengo1::kColorBlue"
+            ],
+            [
+                "Yellow",
+                " Sengo1::kColorYellow"
+            ]
+        ],
+        "default_SetBlobParam_COLOR_LABLE": " Sengo1::kColorRed",
+        "default_GetColorBlob_COLOR_LABLE": " Sengo1::kColorRed"
+    },
+    "BALL_LABLE": {
+        "menu": [
+            [
+                "Table Tennis",
+                " Sengo1::kBallTableTennis"
+            ],
+            [
+                "Tennis",
+                " Sengo1::kBallTennis"
+            ]
+        ]
+    },
+    "CARD_LABLE": {
+        "menu": [
+            [
+                "Forward",
+                " Sengo1::kCardForward"
+            ],
+            [
+                "Left",
+                " Sengo1::kCardLeft"
+            ],
+            [
+                "Right",
+                " Sengo1::kCardRight"
+            ],
+            [
+                "Turn Around",
+                " Sengo1::kCardTurnAround"
+            ],
+            [
+                "Park",
+                " Sengo1::kCardPark"
+            ]
+        ]
+    }
+}
