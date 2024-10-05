@@ -36,7 +36,7 @@
   "Sengo1.SetBlobParam|block": "设置   Sengo1   色块检测   最小宽度[WIDTH] 最小高度[HIGHT] 颜色[COLOR_LABLE]",
   "Sengo1.SetFaceParam|block": "设置   Sengo1   人脸识别   [COLOR_LABLE] 编号[NUM]",
   "Sengo1.FACE_PARAM.save data as|menu": "保存数据并",
-  "Sengo1.FACE_PARAM.delate data|menu": "删除数据",
+  "Sengo1.FACE_PARAM.delete data|menu": "删除数据",
   "Sengo1.GetVisionResult|block": "   Sengo1   [VISION_TYPE]   返回的结果数量 ",
   "Sengo1.GetColorValue|block": "   Sengo1   颜色识别   返回值[OBJ_INFO] ",
   "Sengo1.OBJ_INFO_COLOR.red CH value|menu": "红色分量值",
