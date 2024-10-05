@@ -87,7 +87,7 @@ namespace Sengo1 {
 
         Generator.addObject("param_obj", "sengo1_object_t", `param;`);
         Generator.addCode(`param.label = ${l};`);
-        Generator.addCode(`sengo1.SetParam(Sengo1::kVisionFace,,&param,(int)${num});`);
+        Generator.addCode(`sengo1.SetParam(Sengo1::kVisionFace,&param,(int)${num});`);
     }
 
     //% block="  Sengo1   algo[VISION_TYPE]   num of results" blockType="reporter" 
