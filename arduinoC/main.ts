@@ -41,8 +41,8 @@ namespace Sengo1 {
 
     //% block=" Set   Sengo1   algo Color   x-coord[XVALUE] y-coord [YVALUE] width[WIDTH] height[HIGHT]"
     //% NUM.shadow="range"   NUM.params.min=1    NUM.params.max=25    NUM.defl=1
-    //% XVALUE.shadow="number"   XVALUE.defl=150
-    //% YVALUE.shadow="number"   YVALUE.defl=120
+    //% XVALUE.shadow="number"   XVALUE.defl=50
+    //% YVALUE.shadow="number"   YVALUE.defl=50
     //% WIDTH.shadow="number"   WIDTH.defl=3
     //% HIGHT.shadow="number"   HIGHT.defl=4
     export function SetColorParam(parameter: any) {
@@ -52,7 +52,7 @@ namespace Sengo1 {
         let w = parameter.WIDTH.code;
         let h = parameter.HIGHT.code;
 
-        Generator.addObject("param_obj", "sengo1_object_t", `param;`);
+        Generator.addObject("param_obj", "sentry_object_t", `param;`);
         Generator.addCode(`param.x_value = ${x};`);
         Generator.addCode(`param.y_value = ${y};`);
         Generator.addCode(`param.width = ${w};`);
@@ -70,7 +70,7 @@ namespace Sengo1 {
         let w = parameter.WIDTH.code;
         let h = parameter.HIGHT.code;
 
-        Generator.addObject("param_obj", "sengo1_object_t", `param;`);
+        Generator.addObject("param_obj", "sentry_object_t", `param;`);
         Generator.addCode(`param.width = ${w};`);
         Generator.addCode(`param.height = ${h};`);
         Generator.addCode(`param.label = ${l};`);
@@ -85,7 +85,7 @@ namespace Sengo1 {
         let num = parameter.NUM.code;
         let l = parameter.COLOR_LABLE.code;
 
-        Generator.addObject("param_obj", "sengo1_object_t", `param;`);
+        Generator.addObject("param_obj", "sentry_object_t", `param;`);
         Generator.addCode(`param.label = ${l};`);
         Generator.addCode(`sengo1.SetParam(Sengo1::kVisionFace,&param,(int)${num});`);
     }
@@ -99,44 +99,41 @@ namespace Sengo1 {
     }
 
     
-    //% block="  Sengo1   algo Color   [OBJ_INFO] of result [NUM]" blockType="reporter"
+    //% block="  Sengo1   algo Color   [OBJ_INFO] of " blockType="reporter"
     //% NUM.shadow="number" NUM.defl=1
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO_COLOR"    
     export function GetColorValue(parameter: any) {
 
-        let num = parameter.NUM.code;
+        
         let obj = parameter.OBJ_INFO.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionColor,${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
-    //% block="  Sengo1   algo[VISION_TYPE]    [OBJ_INFO] of result [NUM]" blockType="reporter"
+    //% block="  Sengo1   algo[VISION_TYPE]    [OBJ_INFO] of " blockType="reporter"
     //% VISION_TYPE.shadow="dropdown" VISION_TYPE.options="VISION_TYPE_VALUE"
     //% NUM.shadow="number"  NUM.defl=1
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO"    
     export function GetValue(parameter: any) {
 
         let vision_type = parameter.VISION_TYPE.code;
-        let num = parameter.NUM.code;
         let obj = parameter.OBJ_INFO.code;
         Generator.addCode([`sengo1.GetValue(${vision_type},${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
-    //% block="  Sengo1   algo Line    [OBJ_INFO] of result [NUM]" blockType="reporter"   
+    //% block="  Sengo1   algo Line    [OBJ_INFO] of " blockType="reporter"   
     //% NUM.shadow="number" NUM.defl=1
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO_LINE"    
     export function GetLineValue(parameter: any) {
 
-        let num = parameter.NUM.code;
         let obj = parameter.OBJ_INFO.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionLine,${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
-    //% block="  Sengo1   algo QrCode    [OBJ_INFO] of result [NUM]" blockType="reporter"   
+    //% block="  Sengo1   algo QrCode    [OBJ_INFO] of " blockType="reporter"   
     //% NUM.shadow="number" NUM.defl=1
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO_QR"    
     export function GetQrCodeValue(parameter: any) {
 
-        let num = parameter.NUM.code;
         let obj = parameter.OBJ_INFO.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionQrCode,${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
@@ -144,46 +141,42 @@ namespace Sengo1 {
     //% block="  Sengo1   algo QrCode   string   of decoding result" blockType="reporter"
     export function GetQrCodeValueStr(parameter: any) {
 
-        Generator.addCode([`String(sengo1.GetQrCodeValueStr())`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`String(sengo1.GetQrCodeValue())`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
         
-    //% block=" Sengo1   algo Color   recognized [COLOR_LABLE] result [NUM]" blockType="boolean"
+    //% block=" Sengo1   algo Color   recognized [COLOR_LABLE] " blockType="boolean"
     //% NUM.shadow="number" NUM.defl=1
     //% COLOR_LABLE.shadow="dropdown" COLOR_LABLE.options="COLOR_LABLE"    
     export function GetColorLable(parameter: any) {
 
-        let num = parameter.NUM.code;
         let obj = parameter.COLOR_LABLE.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionColor,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
-    //% block=" Sengo1   algo Blob   detected [COLOR_LABLE] blob result [NUM]" blockType="boolean"
+    //% block=" Sengo1   algo Blob   detected [COLOR_LABLE] blob " blockType="boolean"
     //% NUM.shadow="number" NUM.defl=1
     //% COLOR_LABLE.shadow="dropdown" COLOR_LABLE.options="COLOR_LABLE"    
     export function GetColorBlob(parameter: any) {
 
-        let num = parameter.NUM.code;
         let obj = parameter.COLOR_LABLE.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionBlob,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
-    //% block=" Sengo1   algo Card   recognized [CARD_LABLE] result [NUM]" blockType="boolean"
+    //% block=" Sengo1   algo Card   recognized [CARD_LABLE] " blockType="boolean"
     //% NUM.shadow="number" NUM.defl=1
     //% CARD_LABLE.shadow="dropdown" CARD_LABLE.options="CARD_LABLE"    
     export function GetCardLable(parameter: any) {
 
-        let num = parameter.NUM.code;
         let obj = parameter.CARD_LABLE.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionCard,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
-    //% block=" Sengo1   algo Ball   recognized [BALL_LABLE] result [NUM]" blockType="boolean"
+    //% block=" Sengo1   algo Ball   recognized [BALL_LABLE] " blockType="boolean"
     //% NUM.shadow="number" NUM.defl=1
     //% BALL_LABLE.shadow="dropdown" BALL_LABLE.options="BALL_LABLE"    
     export function GetBallLable(parameter: any) {
 
-        let num = parameter.NUM.code;
         let obj = parameter.BALL_LABLE.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionBall,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }

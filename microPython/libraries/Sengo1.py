@@ -144,14 +144,14 @@ class color_label_e:
 
 # sengo1 vision
 class sengo1_vision_e:
-    kVisionColor = 1,
-    kVisionBlob = 2,
-    kVisionBall = 3,
-    kVisionLine = 4,
-    kVisionCard = 6,
-    kVisionBody = 7,
-    kVisionFace = 8,
-    kVisionQrCode = 9,
+    kVisionColor = 1
+    kVisionBlob = 2
+    kVisionBall = 3
+    kVisionLine = 4
+    kVisionCard = 6
+    kVisionBody = 7
+    kVisionFace = 8
+    kVisionQrCode = 9
     kVisionMaxType= 10
     
 # sengo1 card label
@@ -955,8 +955,8 @@ class SentryBase:
             while SENTRY_OK != self.__SensorLockkReg(False):
                 pass
         
-        if vision_state.detect > 1:
-            vision_state.sortd()
+        # if vision_state.detect > 1:
+        #     vision_state.sortd()
 
         self.__vision_states[vision_type-1] = vision_state
 
