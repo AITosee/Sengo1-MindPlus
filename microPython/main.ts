@@ -16,7 +16,7 @@ namespace Sengo1 {
             Generator.addImport("from microbit import *");
         }
 
-        Generator.addImport("from Sentry import *");
+        Generator.addImport("from Sengo1 import *");
         Generator.addDeclaration(`sengo1Object`, `sengo1 = Sengo1(${addr})`, true);
         Generator.addCode(`sengo1.begin(${mode})`);
     }
@@ -36,37 +36,33 @@ namespace Sengo1 {
         }
     }
 
-    //% block=" Set   Sengo1   algo Color   x-coord[XVALUE] y-coord [YVALUE] width[WIDTH] height[HIGHT] paramset[NUM]"
-    //% NUM.shadow="range"   NUM.params.min=1    NUM.params.max=25    NUM.defl=1
+    //% block=" Set   Sengo1   algo Color   x-coord[XVALUE] y-coord [YVALUE] width[WIDTH] height[HIGHT]"
     //% XVALUE.shadow="number"   XVALUE.defl=150
     //% YVALUE.shadow="number"   YVALUE.defl=120
     //% WIDTH.shadow="number"   WIDTH.defl=3
     //% HIGHT.shadow="number"   HIGHT.defl=4
     export function SetColorParam(parameter: any) {
 
-        let num = parameter.NUM.code;
         let x = parameter.XVALUE.code;
         let y = parameter.YVALUE.code;
         let w = parameter.WIDTH.code;
         let h = parameter.HIGHT.code;
 
-        Generator.addCode(`sengo1.SetParam(Sengo1_vision_e.kVisionColor,[${x}, ${y}, ${w}, ${h}, 0],${num})`);
+        Generator.addCode(`sengo1.SetParam(sengo1_vision_e.kVisionColor,[${x}, ${y}, ${w}, ${h}, 1])`);
     }
 
     
-    //% block=" Set   Sengo1   algo Blob   min-width[WIDTH] min-height[HIGHT] color [COLOR_LABLE] paramset[NUM]" blockType="command"
-    //% NUM.shadow="range"   NUM.params.min=1    NUM.params.max=25    NUM.defl=1
+    //% block=" Set   Sengo1   algo Blob   min-width[WIDTH] min-height[HIGHT] color [COLOR_LABLE]" blockType="command"
     //% WIDTH.shadow="number"   WIDTH.defl=3
     //% HIGHT.shadow="number"   HIGHT.defl=4
     //% COLOR_LABLE.shadow="dropdown" COLOR_LABLE.options="COLOR_LABLE"
     export function SetBlobParam(parameter: any) {
 
-        let num = parameter.NUM.code;
         let w = parameter.WIDTH.code;
         let h = parameter.HIGHT.code;
         let l = parameter.COLOR_LABLE.code;
 
-        Generator.addCode(`sengo1.SetParam(Sengo1_vision_e.kVisionBlob,[0, 0, ${w}, ${h}, ${l}],${num})`);
+        Generator.addCode(`sengo1.SetParam(sengo1_vision_e.kVisionBlob,[0, 0, ${w}, ${h}, ${l}], 1)`);
     }
     
     //% block=" Set   Sengo1   algo Face  [COLOR_LABLE] ID [NUM]"
@@ -76,7 +72,7 @@ namespace Sengo1 {
         let num = parameter.NUM.code;
         let l = parameter.COLOR_LABLE.code;
 
-        Generator.addCode(`sengo1.SetParam(Sengo1_vision_e.kVisionFace,[0, 0, 0, 0, ${l}],${num})`);
+        Generator.addCode(`sengo1.SetParam(sengo1_vision_e.kVisionFace,[0, 0, 0, 0, ${l}],${num})`);
     }
 
     //% block="  Sengo1   algo[VISION_TYPE]   num of results" blockType="reporter" 
@@ -94,7 +90,7 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.OBJ_INFO_COLOR.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionColor,${obj},${num})`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionColor,${obj},${num})`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
     //% block="  Sengo1   algo[VISION_TYPE]    [OBJ_INFO] of result [NUM]" blockType="reporter"
@@ -116,7 +112,7 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.OBJ_INFO_LINE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionLine,${obj},${num})`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionLine,${obj},${num})`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
     //% block="  Sengo1   algo QrCode    [OBJ_INFO] of result [NUM]" blockType="reporter"   
@@ -126,7 +122,7 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.OBJ_INFO_LINE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionQrCode,${obj},${num})`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionQrCode,${obj},${num})`, Generator.ORDER_UNARY_POSTFIX]);
     }
  
     //% block="  Sengo1   algo QrCode   string   of decoding result" blockType="reporter"
@@ -142,7 +138,7 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.COLOR_LABLE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionColor,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionColor,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
     //% block=" Sengo1   algo Blob   detected [COLOR_LABLE] blob result [NUM]" blockType="boolean"
@@ -152,7 +148,7 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.COLOR_LABLE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionBlob,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionBlob,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
     //% block=" Sengo1   algo Card   recognized [CARD_LABLE] result [NUM]" blockType="boolean"
@@ -162,7 +158,7 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.CARD_LABLE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionCard,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionCard,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
     //% block=" Sengo1   algo Ball   recognized [BALL_LABLE] result [NUM]" blockType="boolean"
@@ -172,6 +168,6 @@ namespace Sengo1 {
 
         let num = parameter.NUM.code;
         let obj = parameter.BALL_LABLE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1_vision_e.kVisionBall,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
+        Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionBall,sengo1_obj_info_e.kLabel,${num})==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
 }

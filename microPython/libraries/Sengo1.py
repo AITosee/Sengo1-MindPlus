@@ -162,7 +162,7 @@ class sengo1_card_label_e:
     kCardTurnAround = 4
     kCardPark = 5
 
-class sengo1_ball_label_e:
+class ball_label_e:
     kBallTableTennis = 1
     kBallTennis = 2
 
@@ -844,7 +844,7 @@ class SentryBase:
 
         return err
 
-    def SetParam(self, vision_type, param: list, param_id):
+    def SetParam(self, vision_type, param: list, param_id = 1):
         if param_id < 0 or param_id >= SENTRY_MAX_RESULT:
             return SENTRY_FAIL
 

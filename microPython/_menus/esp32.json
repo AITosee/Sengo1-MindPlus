@@ -39,47 +39,35 @@
         "menu": [
             [
                 "Color",
-                "sentry2_vision_e.kVisionColor"
+                "sengo1_vision_e.kVisionColor"
             ],
             [
                 "Blob",
-                "sentry2_vision_e.kVisionBlob"
+                "sengo1_vision_e.kVisionBlob"
             ],
             [
-                "AprilTag",
-                "sentry2_vision_e.kVisionAprilTag"
+                "Ball",
+                "sengo1_vision_e.kVisionBall"
             ],
             [
                 "Line",
-                "sentry2_vision_e.kVisionLine"
-            ],
-            [
-                "Learning",
-                "sentry2_vision_e.kVisionLearning"
+                "sengo1_vision_e.kVisionLine"
             ],
             [
                 "Card",
-                "sentry2_vision_e.kVisionCard"
+                "sengo1_vision_e.kVisionCard"
+            ],
+            [
+                "Body",
+                "sengo1_vision_e.kVisionBody"
             ],
             [
                 "Face",
-                "sentry2_vision_e.kVisionFace"
-            ],
-            [
-                "20Classes",
-                "sentry2_vision_e.kVision20Classes"
+                "sengo1_vision_e.kVisionFace"
             ],
             [
                 "QrCode",
-                "sentry2_vision_e.kVisionQrCode"
-            ],
-            [
-                "Custom",
-                "sentry2_vision_e.kVisionCustom"
-            ],
-            [
-                "Motion",
-                "sentry2_vision_e.kVisionMotionDetect"
+                "sengo1_vision_e.kVisionQrCode"
             ]
         ]
     },
@@ -87,31 +75,23 @@
         "menu": [
             [
                 "Blob",
-                "sentry2_vision_e.kVisionBlob"
+                "sengo1_vision_e.kVisionBlob"
             ],
             [
-                "AprilTag",
-                "sentry2_vision_e.kVisionAprilTag"
-            ],
-            [
-                "Learning",
-                "sentry2_vision_e.kVisionLearning"
+                "Ball",
+                "sengo1_vision_e.kVisionBall"
             ],
             [
                 "Card",
-                "sentry2_vision_e.kVisionCard"
+                "sengo1_vision_e.kVisionCard"
+            ],
+            [
+                "Body",
+                "sengo1_vision_e.kVisionBody"
             ],
             [
                 "Face",
-                "sentry2_vision_e.kVisionFace"
-            ],
-            [
-                "20Classes",
-                "sentry2_vision_e.kVision20Classes"
-            ],
-            [
-                "Motion",
-                "sentry2_vision_e.kVisionMotionDetect"
+                "sengo1_vision_e.kVisionFace"
             ]
         ]
     },
@@ -119,26 +99,26 @@
         "menu": [
             [
                 "Color",
-                "sentry2_vision_e.kVisionColor"
+                "sengo1_vision_e.kVisionColor"
             ],
             [
                 "Blob",
-                "sentry2_vision_e.kVisionBlob"
+                "sengo1_vision_e.kVisionBlob"
             ],
             [
                 "Learning",
-                "sentry2_vision_e.kVisionLearning"
+                "sengo1_vision_e.kVisionLearning"
             ],
             [
                 "Face",
-                "sentry2_vision_e.kVisionFace"
+                "sengo1_vision_e.kVisionFace"
             ],
             [
                 "Custom",
-                "sentry2_vision_e.kVisionCustom"
+                "sengo1_vision_e.kVisionCustom"
             ]
         ],
-        "default_SetVisionParam_VISION_TYPE": "sentry2_vision_e.kVisionCustom"
+        "default_SetVisionParam_VISION_TYPE": "sengo1_vision_e.kVisionCustom"
     },
     "VISION_STA": {
         "menu": [
@@ -359,18 +339,18 @@
                 "color_label_e.kColorYellow"
             ]
         ],
-        "default_SetBlobParam_COLOR_LABLE": "sentry2_vision_e.kColorRed",
-        "default_GetColorBlob_COLOR_LABLE": "sentry2_vision_e.kColorRed"
+        "default_SetBlobParam_COLOR_LABLE": "color_label_e.kColorRed",
+        "default_GetColorBlob_COLOR_LABLE": "color_label_e.kColorRed"
     },
     "BALL_LABLE": {
         "menu": [
             [
                 "Table Tennis",
-                "class20_label_e.kAirplane"
+                "ball_label_e.kBallTableTennis"
             ],
             [
                 "Tennis",
-                "class20_label_e.kBicycle"
+                "ball_label_e.kBallTennis"
             ]
         ]
     },
@@ -378,23 +358,23 @@
         "menu": [
             [
                 "Forward",
-                "sentry2_card_label_e.kCardForward"
+                "sengo1_card_label_e.kCardForward"
             ],
             [
                 "Left",
-                "sentry2_card_label_e.kCardLeft"
+                "sengo1_card_label_e.kCardLeft"
             ],
             [
                 "Right",
-                "sentry2_card_label_e.kCardRight"
+                "sengo1_card_label_e.kCardRight"
             ],
             [
                 "Turn Around",
-                "sentry2_card_label_e.kCardTurnAround"
+                "sengo1_card_label_e.kCardTurnAround"
             ],
             [
                 "Park",
-                "sentry2_card_label_e.kCardPark"
+                "sengo1_card_label_e.kCardPark"
             ]
         ]
     }
