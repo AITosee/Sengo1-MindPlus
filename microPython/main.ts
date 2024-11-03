@@ -21,6 +21,17 @@ namespace Sengo1 {
         Generator.addCode(`sengo1.begin(${mode})`);
     }
 
+    //% block=" Set   Sengo1   LEDs' color [DETECTED_COLOR] when targets were detected otherwise [UNDETECTED_COLOR] luma(1-15) [LEVAL] " blockType="command"
+    //% DETECTED_COLOR.shadow="dropdown" DETECTED_COLOR.options="LED_COLOR"
+    //% UNDETECTED_COLOR.shadow="dropdown" UNDETECTED_COLOR.options="LED_COLOR"  
+    //% LEVAL.shadow="range"   LEVAL.params.min=1    LEVAL.params.max=15    LEVAL.defl=1   
+    export function LedSetColor(parameter: any) {
+        let detected_color = parameter.DETECTED_COLOR.code;
+        let undetected_color = parameter.UNDETECTED_COLOR.code;
+        let leval = parameter.LEVAL.code;
+        Generator.addCode(`sengo1.LedSetColor(${detected_color},${undetected_color},${leval});`);
+    }
+
     //% block=" Set   Sengo1   [VISION_STA]   algo [VISION_TYPE]" blockType="command"
     //% VISION_TYPE.shadow="dropdown" VISION_TYPE.options="VISION_TYPE_ALL"
     //% VISION_STA.shadow="dropdown" VISION_STA.options="VISION_STA"    

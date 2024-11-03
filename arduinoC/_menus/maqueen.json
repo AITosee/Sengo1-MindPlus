@@ -23,35 +23,35 @@
         "menu": [
             [
                 "Color",
-                " Sengo1::kVisionColor"
+                "Sengo1::kVisionColor"
             ],
             [
                 "Blob",
-                " Sengo1::kVisionBlob"
+                "Sengo1::kVisionBlob"
             ],
             [
                 "Ball",
-                " Sengo1::kVisionBall"
+                "Sengo1::kVisionBall"
             ],
             [
                 "Line",
-                " Sengo1::kVisionLine"
+                "Sengo1::kVisionLine"
             ],
             [
                 "Card",
-                " Sengo1::kVisionCard"
+                "Sengo1::kVisionCard"
             ],
             [
                 "Body",
-                " Sengo1::kVisionBody"
+                "Sengo1::kVisionBody"
             ],
             [
                 "Face",
-                " Sengo1::kVisionFace"
+                "Sengo1::kVisionFace"
             ],
             [
                 "QrCode",
-                " Sengo1::kVisionQrCode"
+                "Sengo1::kVisionQrCode"
             ]
         ]
     },
@@ -59,23 +59,23 @@
         "menu": [
             [
                 "Blob",
-                " Sengo1::kVisionBlob"
+                "Sengo1::kVisionBlob"
             ],
             [
                 "Ball",
-                " Sengo1::kVisionBall"
+                "Sengo1::kVisionBall"
             ],
             [
                 "Card",
-                " Sengo1::kVisionCard"
+                "Sengo1::kVisionCard"
             ],
             [
                 "Body",
-                " Sengo1::kVisionBody"
+                "Sengo1::kVisionBody"
             ],
             [
                 "Face",
-                " Sengo1::kVisionFace"
+                "Sengo1::kVisionFace"
             ]
         ]
     },
@@ -83,26 +83,26 @@
         "menu": [
             [
                 "Color",
-                " Sengo1::kVisionColor"
+                "Sengo1::kVisionColor"
             ],
             [
                 "Blob",
-                " Sengo1::kVisionBlob"
+                "Sengo1::kVisionBlob"
             ],
             [
                 "Learning",
-                " Sengo1::kVisionLearning"
+                "Sengo1::kVisionLearning"
             ],
             [
                 "Face",
-                " Sengo1::kVisionFace"
+                "Sengo1::kVisionFace"
             ],
             [
                 "Custom",
-                " Sengo1::kVisionCustom"
+                "Sengo1::kVisionCustom"
             ]
         ],
-        "default_SetVisionParam_VISION_TYPE": " Sengo1::kVisionCustom"
+        "default_SetVisionParam_VISION_TYPE": "Sengo1::kVisionCustom"
     },
     "VISION_STA": {
         "menu": [
@@ -267,7 +267,7 @@
     "LED_COLOR": {
         "menu": [
             [
-                "Close",
+                "Black",
                 "kLedClose"
             ],
             [
@@ -298,47 +298,49 @@
                 "White",
                 "kLedWhite"
             ]
-        ]
+        ],
+        "default_LedSetColor_DETECTED_COLOR": "kLedBlue",
+        "default_LedSetColor_UNDETECTED_COLOR": "kLedWhite"
     },
     "COLOR_LABLE": {
         "menu": [
             [
                 "Black",
-                " Sengo1::kColorBlack"
+                "Sengo1::kColorBlack"
             ],
             [
                 "White",
-                " Sengo1::kColorWhite"
+                "Sengo1::kColorWhite"
             ],
             [
                 "Red",
-                " Sengo1::kColorRed"
+                "Sengo1::kColorRed"
             ],
             [
                 "Green",
-                " Sengo1::kColorGreen"
+                "Sengo1::kColorGreen"
             ],
             [
                 "Blue",
-                " Sengo1::kColorBlue"
+                "Sengo1::kColorBlue"
             ],
             [
                 "Yellow",
-                " Sengo1::kColorYellow"
+                "Sengo1::kColorYellow"
             ]
         ],
-        "default_SetBlobParam_COLOR_LABLE": " Sengo1::kColorRed",
-        "default_GetColorBlob_COLOR_LABLE": " Sengo1::kColorRed"
+        "default_SetBlobParam_COLOR_LABLE": "Sengo1::kColorRed",
+        "default_GetColorBlob_COLOR_LABLE": "Sengo1::kColorRed"
     },
     "BALL_LABLE": {
         "menu": [
             [
                 "Table Tennis",
-                " Sengo1::kBallTableTennis"
+                "Sengo1::kBallTableTennis"
             ],
             [
                 "Tennis",
-                " Sengo1::kBallTennis"
+                "Sengo1::kBallTennis"
             ]
         ]
     },
@@ -346,23 +348,23 @@
         "menu": [
             [
                 "Forward",
-                " Sengo1::kCardForward"
+                "Sengo1::kCardForward"
             ],
             [
                 "Left",
-                " Sengo1::kCardLeft"
+                "Sengo1::kCardLeft"
             ],
             [
                 "Right",
-                " Sengo1::kCardRight"
+                "Sengo1::kCardRight"
             ],
             [
                 "Turn Around",
-                " Sengo1::kCardTurnAround"
+                "Sengo1::kCardTurnAround"
             ],
             [
                 "Park",
-                " Sengo1::kCardPark"
+                "Sengo1::kCardPark"
             ]
         ]
     }
