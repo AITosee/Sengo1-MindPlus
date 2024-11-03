@@ -312,7 +312,7 @@
             ]
         ],
         "default_LedSetColor_DETECTED_COLOR": "kLedBlue",
-        "default_LedSetColor_UNDETECTED_COLOR": "kLedWhite"
+        "default_LedSetColor_UNDETECTED_COLOR": "kLedRed"
     },
     "COLOR_LABLE": {
         "menu": [
