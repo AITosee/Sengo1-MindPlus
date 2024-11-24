@@ -83,7 +83,7 @@
   "Sengo1.CARD_LABLE.Left|menu": "左转",
   "Sengo1.CARD_LABLE.Right|menu": "右转",
   "Sengo1.CARD_LABLE.Turn Around|menu": "掉头",
-  "Sengo1.CARD_LABLE.Park|menu": "暂停",
+  "Sengo1.CARD_LABLE.Park|menu": "停车",
   "Sengo1.GetBallLable|block": "   Sengo1   球体识别   识别到 [BALL_LABLE] ",
   "Sengo1.BALL_LABLE.Table Tennis|menu": "乒乓球",
   "Sengo1.BALL_LABLE.Tennis|menu": "网球"
