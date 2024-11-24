@@ -17,7 +17,7 @@
     "win",
     "web"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",

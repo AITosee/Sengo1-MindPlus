@@ -690,7 +690,7 @@ class SentryBase:
         self.__img_w = 0
         self.__img_h = 0
         self.__debug = None
-        self.__vision_states = [None]*SENTRY_MAX_RESULT
+        self.__vision_states = [None]*sengo1_vision_e.kVisionMaxType
 
         self.SetDebug(log_level)
 
