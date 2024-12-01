@@ -107,11 +107,11 @@
     "VISION_STA": {
         "menu": [
             [
-                "Open",
+                "run",
                 "ON"
             ],
             [
-                "Close",
+                "stop",
                 "OFF"
             ]
         ]

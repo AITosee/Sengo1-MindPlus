@@ -172,15 +172,6 @@ namespace Sengo1 {
         let obj = parameter.COLOR_LABLE.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionBlob,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
-
-    //% block=" Sengo1   algo Card   recognized [CARD_LABLE] " blockType="boolean"
-    //% NUM.shadow="number" NUM.defl=1
-    //% CARD_LABLE.shadow="dropdown" CARD_LABLE.options="CARD_LABLE"    
-    export function GetCardLable(parameter: any) {
-
-        let obj = parameter.CARD_LABLE.code;
-        Generator.addCode([`sengo1.GetValue(Sengo1::kVisionCard,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
-    }
     
     //% block=" Sengo1   algo Ball   recognized [BALL_LABLE] " blockType="boolean"
     //% NUM.shadow="number" NUM.defl=1
@@ -189,5 +180,14 @@ namespace Sengo1 {
 
         let obj = parameter.BALL_LABLE.code;
         Generator.addCode([`sengo1.GetValue(Sengo1::kVisionBall,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
+    }
+
+    //% block=" Sengo1   algo Card   recognized [CARD_LABLE] " blockType="boolean"
+    //% NUM.shadow="number" NUM.defl=1
+    //% CARD_LABLE.shadow="dropdown" CARD_LABLE.options="CARD_LABLE"    
+    export function GetCardLable(parameter: any) {
+
+        let obj = parameter.CARD_LABLE.code;
+        Generator.addCode([`sengo1.GetValue(Sengo1::kVisionCard,kLabel)==${obj}`, Generator.ORDER_UNARY_POSTFIX]);
     }
 }
