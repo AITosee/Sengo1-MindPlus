@@ -21,7 +21,7 @@
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",
-      "version": "v1.3.9",
+      "version": "v1.3.7",
       "board": [
         "arduino",
         "arduinonano",
