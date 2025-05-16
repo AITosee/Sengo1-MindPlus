@@ -1,5 +1,5 @@
 {
-  "Sengo1.Begin|block": "初始化  Sengo1  端口[MODE] 地址[ADDR] ",
+  "Sengo1.Begin|block": "初始化   Sengo1  端口[MODE] 地址[ADDR] ",
   "Sengo1.MODE.uart1|menu": "串口1",
   "Sengo1.MODE.uart2|menu": "串口2",
   "Sengo1.VisionSet|block": "设置   Sengo1   [VISION_STA] 算法 [VISION_TYPE] ",

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+__vision__ = "1.2.4"
 import ustruct  # type: ignore # pylint: disable=import-error
 from time import sleep_ms  # pylint: disable=no-name-in-module
 
