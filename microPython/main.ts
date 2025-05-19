@@ -86,7 +86,7 @@ namespace Sengo1 {
         Generator.addCode(`sengo1.SetParam(sengo1_vision_e.kVisionFace,[0, 0, 0, 0, ${l}],${num})`);
     }
 
-    //% block="  Sengo1   algo[VISION_TYPE]   num of results" blockType="reporter" 
+    //% block="  Sengo1   algo[VISION_TYPE]   num of result" blockType="reporter" 
     //% VISION_TYPE.shadow="dropdown" VISION_TYPE.options="VISION_TYPE_ALL"    
     export function GetVisionResult(parameter: any) {
 
@@ -94,7 +94,7 @@ namespace Sengo1 {
         Generator.addCode([`sengo1.GetValue(${vision_type}, sentry_obj_info_e.kStatus)`, Generator.ORDER_UNARY_POSTFIX]);
     }
 
-    //% block="  Sengo1   algo Color   [OBJ_INFO] of " blockType="reporter"
+    //% block="  Sengo1   algo Color   [OBJ_INFO] of result" blockType="reporter"
     //% NUM.shadow="number" NUM.defl=1
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO_COLOR"    
     export function GetColorValue(parameter: any) {
@@ -104,7 +104,7 @@ namespace Sengo1 {
         Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionColor,${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
-    //% block="  Sengo1   algo[VISION_TYPE]    [OBJ_INFO] of " blockType="reporter"
+    //% block="  Sengo1   algo[VISION_TYPE]    [OBJ_INFO] of result" blockType="reporter"
     //% VISION_TYPE.shadow="dropdown" VISION_TYPE.options="VISION_TYPE_VALUE"
     //% NUM.shadow="number"  NUM.defl=1
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO"    
@@ -116,14 +116,14 @@ namespace Sengo1 {
         Generator.addCode([`sengo1.GetValue(${vision_type},${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
-    //% block="  Sengo1   algo Line    [OBJ_INFO] of " blockType="reporter"   
+    //% block="  Sengo1   algo Line    [OBJ_INFO] of result" blockType="reporter"   
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO_LINE"    
     export function GetLineValue(parameter: any) {
         let obj = parameter.OBJ_INFO.code;
         Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionLine,${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
     
-    //% block="  Sengo1   algo QrCode    [OBJ_INFO] of " blockType="reporter"   
+    //% block="  Sengo1   algo QrCode    [OBJ_INFO] of result" blockType="reporter"   
     //% OBJ_INFO.shadow="dropdown" OBJ_INFO.options="OBJ_INFO_QR"    
     export function GetQrCodeValue(parameter: any) {
 
@@ -132,7 +132,7 @@ namespace Sengo1 {
         Generator.addCode([`sengo1.GetValue(sengo1_vision_e.kVisionQrCode,${obj})`, Generator.ORDER_UNARY_POSTFIX]);
     }
  
-    //% block="  Sengo1   algo QrCode   string   of decoding result" blockType="reporter"
+    //% block="  Sengo1   algo QrCode   string of decoding result" blockType="reporter"
     export function GetQrCodeValueStr(parameter: any) {
 
         Generator.addCode([`sengo1.GetQrCodeString()`, Generator.ORDER_UNARY_POSTFIX]);
